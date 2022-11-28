@@ -16,7 +16,7 @@ export function SubscribeButon({ priceId }: SubscribeButtonProps) {
             signIn('github')
             return;
         }
-        
+
         // criação da checkout session
         try {
             const response = await api.post('/subscribe')
